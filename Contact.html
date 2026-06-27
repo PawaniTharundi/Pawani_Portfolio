@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Pawani Tharundi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== HEADER / NAV ========== -->
+    <header>
+      <div class="nav-inner">
+        <div class="logo">PT<span class="dot">.</span></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== PAGE WRAPPER ========== -->
+    <div class="page-wrapper single-col">
+      <main>
+        <!-- Page Title -->
+        <section class="page-hero card">
+          <h1>Get In <span class="accent-text">Touch</span></h1>
+          <p class="lead">
+            Whether you want to collaborate, ask about my work, or just say
+            hello — I'd love to hear from you. You can also subscribe to my
+            newsletter below!
+          </p>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="card">
+          <h2>Contact Information</h2>
+          <div class="contact-info-grid">
+            <div class="contact-info-item">
+              <span class="contact-icon">✉</span>
+              <div>
+                <strong>Email</strong>
+                <p>
+                  <a href="mailto:pawanitharundi6@gmail.com" target="_blank"
+                    >pawanitharundi6@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+94 763 253 178</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>90/3/A Uswaththa, Mahawila, Panadura</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">⌥</span>
+              <div>
+                <strong>GitHub</strong>
+                <p>
+                  <a href="https://github.com/PawaniTharundi" target="_blank"
+                    >github.com/PawaniTharundi</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact / Newsletter Form -->
+        <section class="card">
+          <h2>Send a Message / Subscribe</h2>
+
+          <form action="#" method="post" class="contact-form">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="name"
+                >Full Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+                minlength="2"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email"
+                >Email Address <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="yourname@example.com"
+                required
+              />
+            </div>
+
+            <!-- Phone (optional) -->
+            <div class="form-group">
+              <label for="phone"
+                >Phone Number <span class="optional">(optional)</span></label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+94 000 000 000"
+              />
+            </div>
+
+            <!-- Subject Dropdown -->
+            <div class="form-group">
+              <label for="subject"
+                >Subject <span class="required">*</span></label
+              >
+              <select id="subject" name="subject" required>
+                <option value="">-- Please select a subject --</option>
+                <option value="newsletter">Subscribe to Newsletter</option>
+                <option value="collaboration">Project Collaboration</option>
+                <option value="internship">Internship Opportunity</option>
+                <option value="general">General Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message"
+                >Your Message <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Newsletter Checkbox -->
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" value="yes" />
+                <span
+                  >Yes, subscribe me to Pawani's newsletter for updates on
+                  projects and blog posts.</span
+                >
+              </label>
+            </div>
+
+            <!-- Terms Checkbox -->
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" value="agreed" required />
+                <span
+                  >I agree that my information will be used to respond to my
+                  enquiry. <span class="required">*</span></span
+                >
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-group">
+              <button type="submit" class="btn-primary">Send Message 📨</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <!-- end .page-wrapper -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <p>&copy; 2025 Medagamage Pawani Tharundi. All rights reserved.</p>
+      <p class="footer-sub">BSc Computer Science · University of Westminster</p>
+    </footer>
+  </body>
+</html>
+
+

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawani Tharundi | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: Playfair Display + DM Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ___ HEADER / NAV ____-->
+    <header>
+      <div class="nav-inner">
+        <div class="logo">PT<span class="dot">.</span></div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ____ HERO SECTION ____ -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">
+          Computer Science Undergraduate @ University of Westminster
+        </p>
+        <h1 class="hero-title">
+          Medagamage<br /><span class="accent-text">Pawani Tharundi</span>
+        </h1>
+        <p class="hero-sub">
+          Full-Stack Web Developer &amp; Machine Learning Enthusiast.<br />Building
+          modern web apps with React.js, Next.js, Node.js &amp; MongoDB.
+        </p>
+        <div class="hero-btns">
+          <a href="about.html" class="btn-primary">View My Work</a>
+          <a href="contact.html" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="Pawani Tharundi" />
+      </div>
+      <div class="hero-decoration">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <div class="deco-ring"></div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE WRAPPER (main + aside) ========== -->
+    <div class="page-wrapper">
+      <!-- MAIN CONTENT -->
+      <main>
+        <!-- Skills Snapshot -->
+        <section class="card">
+          <h2>What I Do</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="skill-icon">🌐</span>
+              <h3>Frontend</h3>
+              <p>
+                HTML, CSS, React.js, Next.js — crafting responsive, beautiful
+                UIs
+              </p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">⚙️</span>
+              <h3>Backend</h3>
+              <p>
+                Node.js, PHP, MySQL, MongoDB — building robust server-side
+                solutions
+              </p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">🤖</span>
+              <h3>Machine Learning</h3>
+              <p>Python, data analysis, visualisation &amp; ML integration</p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">🎨</span>
+              <h3>Design</h3>
+              <p>Figma, Photoshop, Illustrator — designing before I code</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Project -->
+        <section class="card featured-project">
+          <h2>Featured Project</h2>
+          <div class="project-highlight">
+            <div class="project-badge">SDGP 2026</div>
+            <h3>PetHub – AI-Powered Smart Pet Care Platform</h3>
+            <p>
+              A full-stack platform integrating pet health tracking, verified
+              marketplace, AI chatbot assistance, and stray animal reporting
+              with real-time data management and personalised recommendations.
+            </p>
+            <div class="tech-tags">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>MongoDB Atlas</span>
+              <span>Firebase</span>
+              <span>Machine Learning</span>
+            </div>
+            <a href="blog.html" class="btn-outline small">Read More →</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="card sidebar-card">
+          <h3>Connect With Me</h3>
+          <ul class="social-links">
+            <li>
+              <!-- attribute selector targets these anchor tags -->
+              <a href="mailto:pawanitharundi6@gmail.com" target="_blank">
+                <span class="social-icon">✉</span> Email Me
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/PawaniTharundi" target="_blank">
+                <span class="social-icon">⌥</span> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/Pawani" target="_blank">
+                <span class="social-icon">in</span> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card sidebar-card">
+          <h3>Quick Facts</h3>
+          <ul class="facts-list">
+            <li><strong>University:</strong> Westminster, London</li>
+            <li><strong>Level:</strong> Year 2 (Level 5)</li>
+            <li><strong>Speciality:</strong> Full-Stack &amp; ML</li>
+            <li><strong>Location:</strong> Panadura, Sri Lanka</li>
+            <li><strong>IEEE Member:</strong> IIT Chapter</li>
+          </ul>
+        </div>
+
+        <div class="card sidebar-card">
+          <h3>Languages</h3>
+          <div class="lang-bar">
+            <span>Sinhala</span>
+            <div class="bar">
+              <div class="bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="lang-bar">
+            <span>English</span>
+            <div class="bar">
+              <div class="bar-fill" style="width: 65%"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- end .page-wrapper -->
+
+    <!-- ____ FOOTER ____ -->
+    <footer>
+      <p>&copy; 2025 Medagamage Pawani Tharundi. All rights reserved.</p>
+      <p class="footer-sub">BSc Computer Science · University of Westminster</p>
+    </footer>
+  </body>
+</html>
