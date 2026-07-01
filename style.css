@@ -1,4 +1,4 @@
-/* --1. GOOGLE FONT  (Spec: specify fonts using @font-face / google fonts)-- */
+/* --1. GOOGLE FONT-- */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap");
 
 /* 2. CSS VARIABLES-- */
@@ -23,7 +23,6 @@
 }
 
 body {
-  /* Spec: specify font throughout site */
   font-family: "DM Sans", sans-serif;
   background-color: var(--light-bg);
   color: var(--text);
@@ -65,7 +64,6 @@ a {
   transition: color 0.3s ease; /* Spec: transitions */
 }
 
-/* Spec: user action pseudo class */
 a:hover {
   color: var(--accent2);
   text-decoration: underline;
@@ -73,12 +71,10 @@ a:hover {
 
 /* -- 5. HEADER & NAVIGATION-- */
 header {
-  /* Spec: gradient */
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
   position: sticky;
   top: 0;
   z-index: 100;
-  /* Spec: shadows */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -91,7 +87,6 @@ header {
   justify-content: space-between;
 }
 
-/* Spec: child combinator — direct child of header */
 header > .nav-inner {
   gap: 20px;
 }
@@ -101,7 +96,6 @@ header > .nav-inner {
   font-size: 1.8em;
   font-weight: 700;
   color: var(--white);
-  /* Spec: text effects */
   text-shadow: 2px 2px 8px rgba(233, 69, 96, 0.5);
   letter-spacing: 2px;
 }
@@ -119,22 +113,18 @@ nav ul {
 nav ul li a {
   color: rgba(255, 255, 255, 0.85);
   padding: 8px 18px;
-  /* Spec: border + rounded corners */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   font-size: 0.9em;
   font-weight: 500;
-  /* Spec: transitions */
   transition: all 0.3s ease;
   display: inline-block;
 }
 
-/* Spec: user action pseudo class (:hover) */
 nav ul li a:hover {
-  background-color: var(--semi-trans); /* Spec: semi-transparent colour */
+  background-color: var(--semi-trans);
   border-color: var(--accent);
   color: var(--white);
-  /* Spec: transforms */
   transform: translateY(-2px);
 }
 
@@ -145,10 +135,8 @@ nav ul li a.active {
   box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
 }
 
-/* --6. HERO SECTION
-  -- */
+/* --6. HERO SECTION-- */
 .hero {
-  /* Spec: gradient */
   background: linear-gradient(160deg, var(--primary) 55%, var(--accent2) 100%);
   color: var(--white);
   padding: 90px 30px 80px;
@@ -161,12 +149,10 @@ nav ul li a.active {
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  /* Spec: animations */
   animation: slideUp 0.8s ease forwards;
 }
 
 .hero-tag {
-  /* Spec: semi-transparent colour */
   background: rgba(233, 69, 96, 0.2);
   border: 1px solid rgba(233, 69, 96, 0.5);
   color: rgba(255, 255, 255, 0.9);
@@ -182,7 +168,6 @@ nav ul li a.active {
 .hero-title {
   font-size: 3.4em;
   color: var(--white);
-  /* Spec: text effects — text-shadow */
   text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
@@ -214,7 +199,6 @@ nav ul li a.active {
   font-weight: 500;
   border: 2px solid var(--accent);
   display: inline-block;
-  /* Spec: transitions */
   transition: all 0.3s ease;
   cursor: pointer;
   font-family: "DM Sans", sans-serif;
@@ -222,11 +206,9 @@ nav ul li a.active {
   text-decoration: none;
 }
 
-/* Spec: user action pseudo class */
 .btn-primary:hover {
   background: transparent;
   color: var(--accent);
-  /* Spec: transforms */
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(233, 69, 96, 0.35);
   text-decoration: none;
@@ -240,7 +222,6 @@ nav ul li a.active {
   font-weight: 500;
   border: 2px solid rgba(255, 255, 255, 0.5);
   display: inline-block;
-  /* Spec: transitions */
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -332,32 +313,25 @@ main {
 /* --8. CARDS-- */
 .card {
   background: var(--white);
-  /* Spec: border */
   border: 1px solid var(--border);
-  /* Spec: rounded corners */
   border-radius: 16px;
   padding: 35px;
-  /* Spec: shadows */
   box-shadow: 0 6px 24px var(--card-shadow);
   margin-bottom: 28px;
 }
 
-/* Spec: structural selector — style first card differently */
 .card:first-child {
   border-top: 4px solid var(--accent);
 }
 
-/* Spec: nth pseudo class — alternate card background */
 .card:nth-child(even) {
   background: #fafaf8;
 }
 
-/* Spec: negation pseudo class */
 .card:not(:last-child) {
   margin-bottom: 28px;
 }
 
-/* --9. PSEUDO ELEMENTS -- */
 h2::before {
   content: "— ";
   color: var(--accent);
@@ -365,7 +339,6 @@ h2::before {
   font-weight: 300;
 }
 
-/* Spec: pseudo element — decorative quote on blog posts */
 .blog-post::before {
   content: "";
   display: block;
@@ -376,13 +349,10 @@ h2::before {
   margin-bottom: 20px;
 }
 
-/* --10. ATTRIBUTE SELECTORS-- */
-/* Attribute selector 1: links that open in new tab */
 a[target="_blank"] {
   font-weight: 500;
 }
 
-/* Attribute selector 2: inputs by type */
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -395,13 +365,11 @@ input[type="tel"] {
   font-weight: 300;
   color: var(--text);
   background: var(--white);
-  /* Spec: transitions */
   transition:
     border-color 0.3s,
     box-shadow 0.3s;
 }
 
-/* Attribute selector 3: textarea */
 textarea[name="message"] {
   width: 100%;
   padding: 12px 16px;
@@ -416,7 +384,6 @@ textarea[name="message"] {
     box-shadow 0.3s;
 }
 
-/* -- 11. USER ACTION PSEUDO CLASSES -- */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -427,7 +394,6 @@ select:focus {
   box-shadow: 0 0 0 4px rgba(233, 69, 96, 0.1);
 }
 
-/*  12. VALIDITY PSEUDO CLASSES */
 input:valid:not(:placeholder-shown) {
   border-color: #27ae60;
   background: #f0fdf4;
@@ -438,14 +404,12 @@ input:invalid:not(:placeholder-shown) {
   background: #fff5f5;
 }
 
-/* --13. RELATIONAL SELECTOR */
 .form-group:has(input:focus) label,
 .form-group:has(textarea:focus) label {
   color: var(--accent);
   font-weight: 500;
 }
 
-/* --14. STRUCTURAL SELECTORS */
 .skills-grid .skill-card:first-child {
   border-left: 4px solid var(--accent);
 }
@@ -454,7 +418,6 @@ input:invalid:not(:placeholder-shown) {
   background: var(--text-muted);
 }
 
-/*  15. SKILLS GRID (Home Page) */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -466,17 +429,13 @@ input:invalid:not(:placeholder-shown) {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 22px;
-  /* Spec: transitions */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-/* Spec: user action pseudo class */
 .skill-card:hover {
-  /* Spec: transforms */
   transform: translateY(-4px);
-  /* Spec: shadows */
   box-shadow: 0 8px 24px rgba(233, 69, 96, 0.15);
 }
 
@@ -538,7 +497,6 @@ aside {
   padding: 24px;
 }
 
-/* Spec: child combinator — direct children of sidebar card */
 .sidebar-card > h3 {
   font-size: 1em;
   font-weight: 600;
@@ -619,21 +577,13 @@ aside {
 
 .bar-fill {
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--accent),
-    var(--accent2)
-  ); /* Spec: gradient */
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
   border-radius: 10px;
 }
 
 /* 18. PAGE HERO (inner pages) */
 .page-hero {
-  background: linear-gradient(
-    135deg,
-    var(--primary) 0%,
-    var(--accent2) 100%
-  ); /* Spec: gradient */
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
   color: var(--white);
   border: none;
 }
@@ -656,17 +606,13 @@ aside {
 }
 
 .timeline::before {
-  content: ""; /* Spec: pseudo element with generated content */
+  content: "";
   position: absolute;
   left: 8px;
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(
-    to bottom,
-    var(--accent),
-    var(--accent2)
-  ); /* Spec: gradient */
+  background: linear-gradient(to bottom, var(--accent), var(--accent2));
 }
 
 .timeline-item {
@@ -682,7 +628,6 @@ aside {
   height: 14px;
   background: var(--accent);
   border-radius: 50%;
-  /* Spec: border */
   border: 3px solid var(--white);
   box-shadow: 0 0 0 3px var(--accent); /* Spec: shadows */
 }
@@ -755,15 +700,12 @@ aside {
   font-size: 0.85em;
   font-weight: 500;
   border: 1px solid var(--border);
-  /* Spec: transitions */
   transition: all 0.25s ease;
 }
 
-/* Spec: user action pseudo class */
 .tag:hover {
   background: var(--accent2);
   color: var(--white);
-  /* Spec: transforms */
   transform: scale(1.05);
 }
 
@@ -779,7 +721,7 @@ aside {
     135deg,
     var(--semi-trans),
     rgba(15, 52, 96, 0.08)
-  ); /* Spec: gradient */
+  );
   color: var(--primary);
   padding: 8px 18px;
   border-radius: 25px;
@@ -816,7 +758,6 @@ aside {
 
 /*  23. BLOG PAGE */
 .blog-post {
-  /* Spec: transitions */
   transition: box-shadow 0.3s ease;
 }
 
@@ -876,15 +817,12 @@ time {
   padding: 18px 20px;
   background: var(--light-bg);
   border-radius: 12px;
-  /* Spec: border */
   border: 1px solid var(--border);
   border-left: 4px solid var(--accent);
-  /* Spec: transitions */
   transition: transform 0.3s;
 }
 
 .project-item:hover {
-  /* Spec: transforms */
   transform: translateX(6px);
 }
 
@@ -1003,7 +941,7 @@ input[type="checkbox"] {
   line-height: 1.85;
 }
 
-/* 28. ANIMATIONS  (Spec: animations)*/
+/* 28. ANIMATIONS */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -1047,8 +985,6 @@ input[type="checkbox"] {
 .card {
   animation: fadeIn 0.5s ease both;
 }
-
-/* Spec: nth pseudo class — stagger card animations */
 .card:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -1086,7 +1022,6 @@ footer p {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* 30. SPECIFICITY EXAMPLE */
 p {
   color: var(--text);
 }
